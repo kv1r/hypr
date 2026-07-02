@@ -11,7 +11,8 @@ hl.bind(mainmod .. " + q ", hl.dsp.window.close()) -- fecha a janela ativa
 hl.bind(mainmod .. " + e ", hl.dsp.exec_cmd(filemanager)) -- executa o gerenciador de arquivos
 hl.bind(mainmod .. " + v ", hl.dsp.window.float({ action = "toggle" })) -- ativa/desativa flutuação de janela
 hl.bind(mainmod .. " + space ", hl.dsp.exec_cmd(menu)) -- executa o menu de apps
-
+hl.bind(mainmod .. " + SHIFT + f", hl.dsp.window.fullscreen({ action = "toggle" }))
+hl.bind(mainmod .. " + f ", hl.dsp.window.fullscreen({ action = "toggle", mode = "maximized" }))
 -- MANIPULAÇÃO DE FOCO DE JANELAS
 hl.bind(mainmod .. " + u ", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainmod .. " + i ", hl.dsp.focus({ direction = "right" }))
