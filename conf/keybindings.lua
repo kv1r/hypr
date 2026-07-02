@@ -20,13 +20,11 @@ hl.bind(mainmod .. " + p ", hl.dsp.focus({ direction = "down" }))
 
 -- SELEÇÃO DE ÁREA DE TRABALHO
 for i = 1, 9 do
-	hl.bind(mainmod .. " + " .. i, function()
-		hl.dsp.focus({ workspace = tostring(i) })
-	end)
+	local ws_str = tostring(i)
 
-	hl.bind(mainmod .. " + SHIFT + " .. i, function()
-		hl.dsp.window.move({ workspace = tostring(i) })
-	end)
+	hl.bind(mainmod .. " + " .. ws_str, hl.dsp.focus({ workspace = ws_str }))
+
+	hl.bind(mainmod .. " + SHIFT + " .. ws_str, hl.dsp.window.move({ workspace = tostring(i) }))
 end
 
 -- ÁREA DE TRABALHO ESPECIAL (scratchpad)
