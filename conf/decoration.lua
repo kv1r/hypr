@@ -4,7 +4,7 @@ hl.config({
 		rounding = 0,
 		active_opacity = 0.8,
 		inactive_opacity = 0.9,
-		dim_inactive = true,
+		dim_inactive = false,
 
 		blur = {
 			enabled = true,

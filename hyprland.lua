@@ -9,3 +9,6 @@ require("conf.decoration")
 
 -- ENTRADAS
 require("conf.input")
+
+-- AUTOSTART
+require("conf.autostart")

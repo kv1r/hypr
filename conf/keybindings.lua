@@ -13,11 +13,18 @@ hl.bind(mainmod .. " + v ", hl.dsp.window.float({ action = "toggle" })) -- ativa
 hl.bind(mainmod .. " + space ", hl.dsp.exec_cmd(menu)) -- executa o menu de apps
 hl.bind(mainmod .. " + SHIFT + f", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainmod .. " + f ", hl.dsp.window.fullscreen({ action = "toggle", mode = "maximized" }))
+
 -- MANIPULAÇÃO DE FOCO DE JANELAS
 hl.bind(mainmod .. " + u ", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainmod .. " + i ", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainmod .. " + o ", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainmod .. " + p ", hl.dsp.focus({ direction = "down" }))
+
+-- MANIPULAÇÃO DE MOVIMENTAÇÃO DE JANELAS
+hl.bind(mainmod .. " + SHIFT + u ", hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainmod .. " + SHIFT + i ", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainmod .. " + SHIFT + o ", hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainmod .. " + SHIFT + p ", hl.dsp.window.move({ direction = "down" }))
 
 -- SELEÇÃO DE ÁREA DE TRABALHO
 for i = 1, 9 do
